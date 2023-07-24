@@ -3,6 +3,7 @@ import styles from "../styles";
 import MovieSlider from "../components/layouts/MovieSlider";
 import { useParams, Link } from "react-router-dom";
 import { detailMovie, detailTv } from "../services/movie.sevice";
+import Navbar from "../components/layouts/Navbar";
 
 const DetailMovie = () => {
   const [DetailMovie, setDetailMovie] = useState([]);
@@ -18,8 +19,9 @@ const DetailMovie = () => {
 
   return (
     <div
-      className={`h-full w-[96.7vw] sm:w-[98.79vw]   ${styles.paddingX} ${styles.paddingY} bg-base-200`}
+      className={`h-full w-[96.7vw] sm:w-[98.79vw] pb-20  ${styles.paddingX} ${styles.paddingY} bg-base-200`}
     >
+      <Navbar />
       <div
         className={`card lg:card-side bg-base-100 shadow-xl mb-10  ${styles.boxWidth} rounded-none text-slate-100`}
       >

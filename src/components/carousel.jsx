@@ -24,7 +24,7 @@ const Carousel = ({ aspek, kategori }) => {
   };
   return (
     <div
-      className={` w-[96.7vw] sm:max-h-screen sm:w-[98.79vw] 
+      className={` w-[99.7vw] sm:max-h-screen sm:w-[98.79vw] 
      bg-base-200 overflow-hidden  `}
     >
       <Slider {...settings}>
@@ -41,10 +41,10 @@ const Carousel = ({ aspek, kategori }) => {
               <div className="w-full h-full pb-10 text-white font-oswald absolute bg-base-200/40 bottom-0  z-10 ">
                 <div className=" absolute bottom-0 sm:bottom-[25%] z-50 px-4 pb-2 flex flex-row-reverse items-center gap-4">
                   <div>
-                    <h1 className=" text-4xl py-1 font-bold drop-shadow-lg ">
+                    <h1 className=" text-xl sm:text-4xl py-1 font-bold drop-shadow-lg ">
                       {data.title == null ? data.name : data.title}
                     </h1>
-                    <p className="overflow-hidden pt-1 indent-2 text-slate-300 font-poppins max-w-[50vw] max-h-40">
+                    <p className="overflow-hidden pt-1 indent-2 text-slate-300 font-poppins max-w-[50vw] max-h-24 sm:max-h-40">
                       {data.overview}
                     </p>
                   </div>
@@ -53,7 +53,7 @@ const Carousel = ({ aspek, kategori }) => {
                       data.poster_path
                     }`}
                     alt={data.title == null ? data.name : data.title}
-                    className="w-[150px] h-[300px] sm:w-[200px] sm:h-[400px]  object-cover object-center shadow-lg"
+                    className="w-[100px] h-[200px] sm:w-[200px] sm:h-[400px]  object-cover object-center shadow-lg"
                   />
                 </div>
               </div>

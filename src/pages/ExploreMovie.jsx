@@ -14,7 +14,7 @@ const ExploreMovie = () => {
           <Navbar />
         </div>
       </div>
-      <div className={`bg-base-200 ${styles.flexStart}`}>
+      <div className={`bg-base-200  pt-20 ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <h3
             className={` text-white font-semibold  sm:text-2xl  ${styles.paddingX}  pt-2`}

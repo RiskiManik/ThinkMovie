@@ -15,7 +15,7 @@ const MovieSlider = ({ kategori, page }) => {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -38,14 +38,14 @@ const MovieSlider = ({ kategori, page }) => {
           slidesToScroll: 2,
           initialSlide: 2,
           arrows: false,
-          className: "center",
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],

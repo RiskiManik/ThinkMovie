@@ -15,7 +15,7 @@ const PeopelSlider = ({ kategori }) => {
   }, []);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -44,8 +44,9 @@ const PeopelSlider = ({ kategori }) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
