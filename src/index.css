@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Chela+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrl::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrl::-webkit-scrollbar-track {
+  box-shadow: inset 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  border-radius: 10px;
+}
+
+/* Handle */
+.scrl::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 5px;
+}
